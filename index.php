@@ -33,6 +33,22 @@
 	        {title: 'Tuition deposit deadline',start: new Date('June 15, 2016 00:00'),duration: 120,end: new Date('June 15, 2016 23:00'),address: 'UOIT',description: 'Deadline to submit tuition deposit; applicants must first accept their offers through OUAC before they can pay their deposits.'}
 	    ];
 		</script>
+	<?php } else if (isset($_GET['level']) && $_GET['level'] == 'spring') { ?>
+		<script type="text/javascript">
+			// 101 CALENDAR BUTTON EVENTS
+	    var eventData = [
+	        {title: 'Pathways Information Night',start: new Date('February 17, 2016 18:00'),duration: 120,address: 'UOIT',description: 'If you are looking to turn your diploma into a degree, our Pathways Information Night provides you with an opportunity to learn more about your degree options, speak with faculty and staff, and learn more about our academic programs and dynamic student life.'},
+	        {title: 'Winter Open House',start: new Date('February 27, 2016 09:00'),duration: 120,address: 'UOIT, North and Downtown locations',description: 'Connect with deans, faculty, staff and current students as you discover the many opportunities available at UOIT. Tours and information sessions will be held at both campus locations.'},
+	        {title: 'March Break Tours',start: new Date('March 14, 2016 00:00'),duration: 120,end: new Date('March 18, 2016 00:00'),address: 'UOIT',description: 'Visit uoit.ca/tours to register.'},
+	        {title: 'University application deadline',start: new Date('March 31, 2016 00:00'),duration: 120,end: new Date('March 31, 2016 23:00'),address: 'UOIT',description: 'Deadline to submit completed spring/summer applications to the Ontario Universities’ Application Centre (OUAC) for equal consideration.'},
+	        {title: 'Document submission deadline',start: new Date('April 14, 2016 00:00'),duration: 120,end: new Date('April 14, 2016 23:00'),address: 'UOIT',description: 'Document submission deadline for admissions consideration for Spring/Summer 2016 applicants.'},
+	        {title: 'Tuition fee deadline',start: new Date('April 21, 2016 00:00'),duration: 120,end: new Date('April 21, 2016 23:00'),address: 'UOIT',description: 'First instalment of spring session fees due.'},
+	        {title: 'Student Orientation',start: new Date('May 4, 2016 00:00'),duration: 120,end: new Date('May 4, 2016 23:00'),address: 'UOIT',description: 'Mature, Transfer and Pathways Student Orientation'},
+	        {title: 'Lectures begin',start: new Date('May 13, 2016 00:00'),duration: 120,end: new Date('May 13, 2016 23:00'),address: 'UOIT',description: 'Lectures begin at UOIT'},
+	        {title: 'Tuition fee deadline',start: new Date('May 13, 2016 00:00'),duration: 120,end: new Date('May 13, 2016 23:00'),address: 'UOIT',description: 'Final instalment of spring session fees due.'},
+	        {title: 'Transcript submission deadline',start: new Date('June 30, 2016 00:00'),duration: 120,end: new Date('June 30, 2016 23:00'),address: 'UOIT',description: 'Deadline to submit official final transcript showing proof of diploma conferral.'}
+	    ];
+		</script>
 	<?php } else { ?>
 		<script type="text/javascript">
 			// 101 CALENDAR BUTTON EVENTS
@@ -162,6 +178,8 @@
 						<?php
 							if (isset($_GET['level']) && $_GET['level'] == '105') {
 								include('inc/105cal.php');
+							} else if (isset($_GET['level']) && $_GET['level'] == 'spring') {
+								include('inc/springcal.php');
 							} else {
 								include('inc/101cal.php');
 							}

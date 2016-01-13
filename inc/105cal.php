@@ -82,6 +82,7 @@
 		<h4>Thursday, March 31, 2016</h4>
 		<p>Document submission deadline for admissions consideration for non-competitive programs.</p>
 		<p>Deadline for out-of-province secondary school students to submit <a href="http://safa.uoit.ca/scholarships-and-bursaries/scholarships/index.php#first"><strong>FIRST Robotics Canada Scholarship application</strong></a>.</p>
+		<p>Deadline for international secondary school students to submit <a href="http://safa.uoit.ca/scholarships-and-bursaries/scholarships/scholarships-and-awards-for-international-students.php"><strong>Global Leadership Award application</strong></a>.</p>
 		<span class="button righter smaller addtoCal" onclick="ga('send','event','button','click','click_addtocal_btn_0331');"></span>
 	</div>
 </article>
